@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 
 export class Movie {
+	// Setting my properties
 	title: string;
 	descript: string;
 	imgUrl: string;
@@ -16,7 +17,14 @@ export class Movie {
 })
 export class MovieService {
 	// Assign new movie items to an Array
-	movies: Movie[] = [ new Movie('Coco', 'Kids', '') ];
+	movies: Movie[] = [
+		new Movie(
+			'Coco',
+			'Kids',
+			'https://m.media-amazon.com/images/M/MV5BYjQ5NjM0Y2YtNjZkNC00ZDhkLWJjMWItN2QyNzFkMDE3ZjAxXkEyXkFqcGdeQXVyODIxMzk5NjA@._V1_.jpg'
+		)
+	];
+
 	constructor() {}
 
 	// Return all movies
