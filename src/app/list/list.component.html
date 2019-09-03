@@ -10,7 +10,7 @@
                 <div class='col-6'>
                     <button class='btn btn-primary' *ngIf='!moviesBeingEdited[i]' (click)='onViewMovieDetails(movie)'>View</button>
                     <button class='btn btn-warning' *ngIf='!moviesBeingEdited[i]' (click)='onStartEditMovie(i)'>Edit</button>
-                    <button class='btn btn-danger' *ngIf='!moviesBeingEdited[i]'>Delete</button>
+                    <button class='btn btn-danger' *ngIf='!moviesBeingEdited[i]' (click)='onDeleteMovie(i)'>Delete</button>
                     <button class='btn btn-success' *ngIf='moviesBeingEdited[i]' (click)='onSaveEditMovie(i)'>Save</button>
                 </div>
             </div>
@@ -20,7 +20,7 @@
 <!-- Show Movie Card -->
 <div class='col-6' *ngIf='movieBeingDisplayed'>
         <div class="card" style="width: 12rem;">
-                <img class="card-img-top" [src]="imgUrl" alt="Card image cap">
+                <img class="card-img-top" [src]="movieBeingDisplayed.imgUrl" alt="Card image cap" height="auto">
                 <div class="card-body">
                   <h5 class="card-title">{{movieBeingDisplayed.title}}</h5>
                   <p class="card-text"> {{movieBeingDisplayed.descript}}</p>

@@ -33,6 +33,7 @@ export class AddMovieComponent implements OnInit, OnDestroy {
 			this.valuesChangeSub.unsubscribe();
 		}
 	}
+
 	onSubmit() {
 		const title = this.movieForm.value.title;
 		const descript = this.movieForm.value.descript;

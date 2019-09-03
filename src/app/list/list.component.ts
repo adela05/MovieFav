@@ -3,7 +3,6 @@ import { MovieService, Movie } from '../movie.service';
 
 @Component({
 	selector: 'app-list',
-	providers: [ MovieService ],
 	templateUrl: './list.component.html',
 	styleUrls: [ './list.component.scss' ]
 })
