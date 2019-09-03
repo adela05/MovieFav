@@ -1,9 +1,9 @@
-<Form [formGroup]='movieForm' (ngSubmit)='onSubmit()' class='mt-2'>
+<Form [formGroup]='movieForm' (ngSubmit)='onSubmit()' class='mt-3 ml-4'>
         <!-- Title -->
-      <input formControlName='title' class='mb-2' placeholder="Title" id='title'><br>
+      <input formControlName='title' class='form-control' placeholder="Title" id='title'><br>
         <!-- Description -->
-      <input formControlName='descript' type="text" class='mb-2' placeholder="Description" id='descript'><br>
+      <input formControlName='descript' type="text" class='form-control' placeholder="Description" id='descript'><br>
         <!-- image area -->
-      <input formControlName='imgUrl' type="text" class='mb-2' placeholder="Image Url" id='imgUrl'><br>
+      <input formControlName='imgUrl' type="text" class='form-control mb-2' placeholder="Image Url" id='imgUrl'>
       <button type='submit' class='btn btn-success'>Add Movie</button>  
 </Form>

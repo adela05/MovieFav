@@ -24,9 +24,19 @@ export class MovieService {
 			'https://m.media-amazon.com/images/M/MV5BYjQ5NjM0Y2YtNjZkNC00ZDhkLWJjMWItN2QyNzFkMDE3ZjAxXkEyXkFqcGdeQXVyODIxMzk5NjA@._V1_.jpg'
 		),
 		new Movie(
+			'The Little Mermaid',
+			'A mermaid princess makes a Faustian bargain in an attempt to become human and win a prince love.',
+			'https://images-na.ssl-images-amazon.com/images/I/91MruhMtBVL.jpg'
+		),
+		new Movie(
 			'Underworld',
 			'Underworld action horror film created by Len Wiseman, Kevin Grevioux, and Danny McBride. The first film, Underworld, was released in 2003.',
 			'https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/Underworld2evolution.jpg/220px-Underworld2evolution.jpg'
+		),
+		new Movie(
+			'Gladiator',
+			'A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.',
+			'https://m.media-amazon.com/images/M/MV5BMDliMmNhNDEtODUyOS00MjNlLTgxODEtN2U3NzIxMGVkZTA1L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg'
 		)
 	];
 

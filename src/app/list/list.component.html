@@ -1,15 +1,17 @@
-<div *ngIf='displayList' class='row mt-3'>
+<div *ngIf='displayList' class='row mt-3 ml-3'>
 <div class='col-6'>
     <ul class='list-group'>
         <li class='list-group-item' *ngFor='let movie of movies; let i = index'>
             <div class='row'>
                 <div class='col-6'>
-                    <p *ngIf='!moviesBeingEdited[i]'>{{movie.title}}</p>
+                    <p class='name' *ngIf='!moviesBeingEdited[i]'>{{movie.title}}</p>
                     <input *ngIf='moviesBeingEdited[i]' [(ngModel)]='movie.title'>
+                    <input *ngIf='moviesBeingEdited[i]' [(ngModel)]='movie.descript'>
+                    <input *ngIf='moviesBeingEdited[i]'[(ngModel)]='moive.imgUrl'>
                 </div>
                 <div class='col-6'>
-                    <button class='btn btn-primary' *ngIf='!moviesBeingEdited[i]' (click)='onViewMovieDetails(movie)'>View</button>
-                    <button class='btn btn-warning' *ngIf='!moviesBeingEdited[i]' (click)='onStartEditMovie(i)'>Edit</button>
+                    <button class='btn btn-primary mr-2' *ngIf='!moviesBeingEdited[i]' (click)='onViewMovieDetails(movie)'>View</button>
+                    <button class='btn btn-warning mr-2' *ngIf='!moviesBeingEdited[i]' (click)='onStartEditMovie(i)'>Edit</button>
                     <button class='btn btn-danger' *ngIf='!moviesBeingEdited[i]' (click)='onDeleteMovie(i)'>Delete</button>
                     <button class='btn btn-success' *ngIf='moviesBeingEdited[i]' (click)='onSaveEditMovie(i)'>Save</button>
                 </div>
@@ -18,7 +20,7 @@
     </ul>
 </div>
 <!-- Show Movie Card -->
-<div class='col-6' *ngIf='movieBeingDisplayed'>
+<div class='col-6 movieCard' *ngIf='movieBeingDisplayed'>
         <div class="card" style="width: 12rem;">
                 <img class="card-img-top" [src]="movieBeingDisplayed.imgUrl" alt="Card image cap" height="auto">
                 <div class="card-body">
