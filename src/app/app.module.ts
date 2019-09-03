@@ -6,11 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddMovieComponent } from './add-movie/add-movie.component';
-import { ListMasterComponent } from './listMaster/list-master/list-master.component';
-import { ListDetailComponent } from './listMaster/list-detail/list-detail.component';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
-	declarations: [ AppComponent, NavbarComponent, AddMovieComponent, ListMasterComponent, ListDetailComponent ],
+	declarations: [ AppComponent, NavbarComponent, AddMovieComponent, ListComponent ],
 	imports: [ BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule ],
 	providers: [],
 	bootstrap: [ AppComponent ]
