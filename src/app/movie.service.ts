@@ -20,7 +20,7 @@ export class MovieService {
 	movies: Movie[] = [
 		new Movie(
 			'Coco',
-			'Kids',
+			'Miguel, confronted with his familys ancestral ban on music, enters the Land of the Dead to find his great-great-grandfather, a legendary singer.',
 			'https://m.media-amazon.com/images/M/MV5BYjQ5NjM0Y2YtNjZkNC00ZDhkLWJjMWItN2QyNzFkMDE3ZjAxXkEyXkFqcGdeQXVyODIxMzk5NjA@._V1_.jpg'
 		),
 		new Movie(

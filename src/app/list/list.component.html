@@ -1,4 +1,4 @@
-<div *ngIf class='row mt-3'>
+<div *ngIf='displayList' class='row mt-3'>
 <div class='col-6'>
     <ul class='list-group'>
         <li class='list-group-item' *ngFor='let movie of movies; let i = index'>
@@ -18,12 +18,12 @@
     </ul>
 </div>
 <!-- Show Movie Card -->
-<div class='container'>
+<div class='col-6' *ngIf='movieBeingDisplayed'>
         <div class="card" style="width: 12rem;">
                 <img class="card-img-top" [src]="imgUrl" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">{{movieBeingDisplayed.title}}</h5>
-                  <p [(ngModel)]='movieBeingDisplayed.descript' class="card-text"></p>
+                  <p class="card-text"> {{movieBeingDisplayed.descript}}</p>
                 </div>
               </div>
 </div>

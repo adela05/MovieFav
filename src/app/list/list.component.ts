@@ -3,6 +3,7 @@ import { MovieService, Movie } from '../movie.service';
 
 @Component({
 	selector: 'app-list',
+	providers: [ MovieService ],
 	templateUrl: './list.component.html',
 	styleUrls: [ './list.component.scss' ]
 })
@@ -11,7 +12,7 @@ export class ListComponent implements OnInit {
 	displayList: boolean = true;
 	imgUrl: string = '';
 	moviesBeingEdited = {};
-	movieBeingDisplayed = Movie;
+	movieBeingDisplayed: Movie;
 	constructor(private movieService: MovieService) {
 		this.movieService = movieService;
 	}
