@@ -1,7 +1,7 @@
 <div *ngIf='displayList' class='row mt-3 ml-3'>
 <div class='col-6'>
     <ul class='list-group'>
-        <li class='list-group-item' *ngFor='let movie of movies; let i = index'>
+        <li class='list-group-item' *ngFor='let movie of movies; let i = index;' [class.active]='movie === movieBeingDisplayed'>
             <div class='row'>
                 <div class='col-6'>
                     <p class='name' *ngIf='!moviesBeingEdited[i]'>{{movie.title}}</p>

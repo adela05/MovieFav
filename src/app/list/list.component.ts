@@ -12,6 +12,7 @@ export class ListComponent implements OnInit {
 	imgUrl: string = '';
 	moviesBeingEdited = {};
 	movieBeingDisplayed: Movie;
+
 	constructor(private movieService: MovieService) {
 		this.movieService = movieService;
 	}
